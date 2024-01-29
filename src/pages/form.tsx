@@ -122,7 +122,7 @@ export default function Form() {
     if (country && khssiym) {
       localStorage.country = country;
       localStorage.khssiym = khssiym;
-      navigate("/show");
+      navigate("/caf-2023-t9wass/show");
     }
   };
 
