@@ -9,69 +9,109 @@ export default function Form() {
   const [khssiym, setKhssiym] = useState("");
   const [showSb7anlah, setShowSb7anLah] = useState(false);
   const countryOptions = [
-    { value: "angola", label: "Angola", image: "/countries/angola.png" },
-    { value: "namibia", label: "Namibia", image: "/countries/namibia.png" },
+    {
+      value: "angola",
+      label: "Angola",
+      image: "/caf-2023-t9wass/countries/angola.png",
+    },
+    {
+      value: "namibia",
+      label: "Namibia",
+      image: "/caf-2023-t9wass/countries/namibia.png",
+    },
 
-    { value: "nigeria", label: "Nigeria", image: "/countries/nigeria.png" },
-    { value: "cameroon", label: "Cameroon", image: "/countries/cameroon.png" },
+    {
+      value: "nigeria",
+      label: "Nigeria",
+      image: "/caf-2023-t9wass/countries/nigeria.png",
+    },
+    {
+      value: "cameroon",
+      label: "Cameroon",
+      image: "/caf-2023-t9wass/countries/cameroon.png",
+    },
 
     {
       value: "equatorial_guinea",
       label: "equatorial Guinea",
-      image: "/countries/equatorial_guinea.png",
+      image: "/caf-2023-t9wass/countries/equatorial_guinea.png",
     },
-    { value: "guinea", label: "Guinea", image: "/countries/guinea.png" },
+    {
+      value: "guinea",
+      label: "Guinea",
+      image: "/caf-2023-t9wass/countries/guinea.png",
+    },
 
-    { value: "egypt", label: "Egypt", image: "/countries/egypt.png" },
-    { value: "dr_congo", label: "DR Congo", image: "/countries/dr_congo.png" },
+    {
+      value: "egypt",
+      label: "Egypt",
+      image: "/caf-2023-t9wass/countries/egypt.png",
+    },
+    {
+      value: "dr_congo",
+      label: "DR Congo",
+      image: "/caf-2023-t9wass/countries/dr_congo.png",
+    },
 
     {
       value: "cape_verde",
       label: "Cape Verde",
-      image: "/countries/cape_verde.png",
+      image: "/caf-2023-t9wass/countries/cape_verde.png",
     },
     {
       value: "mouritania",
       label: "Mouritania",
-      image: "/countries/mouritania.png",
+      image: "/caf-2023-t9wass/countries/mouritania.png",
     },
 
-    { value: "senegal", label: "Senegal", image: "/countries/senegal.png" },
+    {
+      value: "senegal",
+      label: "Senegal",
+      image: "/caf-2023-t9wass/countries/senegal.png",
+    },
     {
       value: "ivory_coast",
       label: "Ivory Coast",
-      image: "/countries/ivory_coast.png",
+      image: "/caf-2023-t9wass/countries/ivory_coast.png",
     },
 
-    { value: "mali", label: "Mali", image: "/countries/mali.png" },
+    {
+      value: "mali",
+      label: "Mali",
+      image: "/caf-2023-t9wass/countries/mali.png",
+    },
     {
       value: "burkina_faso",
       label: "Burkina Faso",
-      image: "/countries/burkina_faso.png",
+      image: "/caf-2023-t9wass/countries/burkina_faso.png",
     },
 
-    { value: "morocco", label: "Morocco", image: "/countries/morocco.png" },
+    {
+      value: "morocco",
+      label: "Morocco",
+      image: "/caf-2023-t9wass/countries/morocco.png",
+    },
     {
       value: "south_africa",
       label: "South Africa",
-      image: "/countries/south_africa.png",
+      image: "/caf-2023-t9wass/countries/south_africa.png",
     },
   ];
   const khssiymsOptions = [
     {
       value: "jerry",
       label: "Jerry l9wass",
-      image: "/khssiym/jerry.png",
+      image: "/caf-2023-t9wass/khssiym/jerry.png",
     },
     {
       value: "3zi",
       label: "3zi l9wass",
-      image: "/khssiym/l3zi.png",
+      image: "/caf-2023-t9wass/khssiym/l3zi.png",
     },
     {
       value: "self",
       label: "bghi ana li n9wss",
-      image: "/khssiym/user.png",
+      image: "/caf-2023-t9wass/khssiym/user.png",
     },
   ];
   const save = async () => {
@@ -127,14 +167,14 @@ export default function Form() {
               onChange={(v) => {
                 setKhssiym(v!.value);
               }}
-              formatOptionLabel={(country) => (
+              formatOptionLabel={(khssiym) => (
                 <div className="flex gap-2 items-center ">
                   <img
                     className="w-8"
-                    src={country.image}
+                    src={khssiym.image}
                     alt="country-image"
                   />
-                  <span>{country.label}</span>
+                  <span>{khssiym.label}</span>
                 </div>
               )}
             />

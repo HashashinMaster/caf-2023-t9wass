@@ -7,11 +7,11 @@ import Show from "./pages/show";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/caf-2023-t9wass",
     element: <Form />,
   },
   {
-    path: "/show",
+    path: "/caf-2023-t9wass/show",
     element: <Show />,
   },
 ]);
