@@ -1,4 +1,4 @@
-import { FileInput, Label, Button } from "flowbite-react";
+import { Label, Button } from "flowbite-react";
 import Select from "react-select";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
