@@ -28,7 +28,7 @@ export default function Show() {
         ></video>
       )}
       {localStorage.khssiym === "self" && (
-        <div className="relative w-[50%]">
+        <div className="relative w-[50%] max-sm:w-full">
           <img
             src="/caf-2023-t9wass/t9wissat/self.png"
             className="w-full max-sm:w-full h-screen object-cover  max-sm:h-[50vh]"
